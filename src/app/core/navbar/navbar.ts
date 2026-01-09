@@ -8,9 +8,9 @@ import { Component, HostListener } from '@angular/core';
 })
 export class Navbar {
 
-  scrolled=false;
+  isscrolled=false;
   @HostListener('window:scroll')
   onScroll(){
-    this.scrolled=window.scrollY > 80;
+    this.isscrolled=window.scrollY > 50;
   }
 }
