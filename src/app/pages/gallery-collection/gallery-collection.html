@@ -1,0 +1,44 @@
+
+<div class="collection-container" *ngIf=" product">
+
+ <!--  CATEGORY BANNER -->
+  <section class="category-banner">
+    <div class="banner-overlay">
+      <h1>{{ product.name }}</h1>
+       <!-- BREADCRUMBS -->
+      <nav class="breadcrumbs">
+        <a routerLink="/">Home</a>
+        <span>›</span>
+        <a routerLink="/gallery">Gallery</a>
+        <span>›</span>
+        <span class="active">{{ product.name }}</span>
+      </nav>
+    </div>
+  </section>
+
+  <div class="collection-content">
+
+ <!-- IMAGE GRID -->
+    <div class="collection-grid">
+      <div
+        class="collection-item"
+        *ngFor="let img of product.images"
+        (click)="openImage(img)"
+      >
+        <img [src]="img" alt="Collection Image">
+      </div>
+    </div>
+</div>
+  
+  <div class="back-btn-wrapper">
+<button class="btn btn-dark back-btn" (click)="goBack()">
+    Back to Gallery
+  </button>
+  </div>
+</div>
+
+
+
+
+
+

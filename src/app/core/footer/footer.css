@@ -1,0 +1,220 @@
+/************/
+
+/*.logo-img {
+  width: 150px;
+}
+h5{
+  color: orange;
+}
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: orange;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+
+footer a {
+  color:black;
+  
+}
+
+footer a:hover {
+  color: orange;
+}*/
+
+
+
+
+
+
+/* ================================
+   D’DECOR STYLE FOOTER
+================================ */
+
+/* FOOTER BASE */
+footer {
+  background: #111;              /* rich charcoal */
+  color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* CONTAINER SPACING */
+footer .container {
+  max-width: 1200px;
+}
+
+/* LOGO */
+footer .logo-img {
+  width: 140px;
+  margin-bottom: 12px;
+}
+
+/* HEADINGS */
+footer h5,
+footer h6 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+footer p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* LINKS */
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  font-size: 13.5px;
+  color: #cfcfcf;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* D’DECOR UNDERLINE HOVER */
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: #caa56a; /* luxury gold */
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* CONTACT TEXT */
+footer .small {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+/* SOCIAL ICONS */
+footer .fab {
+  font-size: 16px;
+  color: #cfcfcf;
+  transition: all 0.3s ease;
+}
+
+footer .fab:hover {
+  color: #caa56a;
+  transform: translateY(-2px);
+}
+
+/* BOTTOM BAR */
+footer .border-top {
+  border-color: rgba(255,255,255,0.1) !important;
+}
+
+footer .text-center.small {
+  font-size: 12.5px;
+  color: #a8a8a8;
+  letter-spacing: 0.6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .d-flex {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+/*.video-footer {
+  position: relative;
+  overflow: hidden;
+  color: #140f0f;
+}
+
+
+.footer-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* OVERLAY */
+/*.footer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 2;
+}
+
+
+.footer-content {
+  position: relative;
+  z-index: 3;
+  padding: 60px 0 30px;
+  font-weight: bold;
+}
+
+/* LINKS */
+/*.footer-links li a,
+.video-footer a {
+  color: #050404;
+  text-decoration: none;
+  opacity: 0.95;
+  font-weight: bold;
+}
+
+.footer-links li a:hover,
+.video-footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+.logo-img {
+  width: 170px;
+  height: 170px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 40px 20px;
+  }
+}*/
+
+

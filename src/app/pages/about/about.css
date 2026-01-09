@@ -1,0 +1,30 @@
+.about-modern-img { 
+    transition: transform .35s ease-in-out; 
+}
+.about-modern-img:hover {
+     transform: scale(1.09); 
+    }
+.about-title  { 
+    font-size: 3rem;
+    font-weight: bold;
+ }
+ .about-title p{
+  color: white;
+  font-weight: bold;
+ }
+.about-desc {
+     color: #e4dbdb;
+      line-height: 1.7; 
+      font-size: 1.10rem; 
+    }
+
+.about-section{
+   margin-top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #a6aab2 0%, #3f021d 100%);
+ /* background-color: lab(61.86% 7.86 32.49 / 0.934);*/
+  padding: 30px;
+ /* border-bottom-left-radius: 20px;*/
+  border-bottom-right-radius: 40px;
+
+}

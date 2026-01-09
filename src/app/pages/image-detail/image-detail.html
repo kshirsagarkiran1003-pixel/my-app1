@@ -1,0 +1,37 @@
+
+<div class="image-detail-page" *ngIf="product">
+
+  <!-- BANNER -->
+  <div class="image-layout">
+
+  <!-- MAIN IMAGE -->
+  <div class="left-image">
+    <img [src]="image" class="main-image">
+  </div>
+
+  <!-- DETAILS -->
+         <div class="right-details">
+                <h2>{{ product.name }}</h2>
+                <p class="desc">{{ product.description }}</p>
+      </div>
+      </div>
+
+  <!-- REMAINING IMAGES -->
+  <div class="thumb-header">
+  <h2>Related Product</h2>
+  </div>
+    <div class="thumb"> 
+        <img 
+      *ngFor="let img of product.images" [src]="img"
+      (click)="changeImage(img)"
+      [class.active]="img === image"/>
+</div>
+
+  <!-- BACK -->
+  <div class="back-btn-wrapper">
+    <button class="btn btn-dark" (click)="goBack()">
+      ← Back to Collection
+    </button>
+  </div>
+
+</div>

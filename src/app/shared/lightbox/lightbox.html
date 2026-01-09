@@ -1,0 +1,13 @@
+
+<div class="lightbox" *ngIf="visible">
+    <div class="lightbox-backdrop" (click)="close()"></div>
+    <div class="lightbox-content rounded shadow">
+      <button class="nav prev" (click)="prevImage()">&#10094;</button>
+      <img [src]="src" />
+      
+
+      <div class="caption text-white mt-2">{{ caption }}</div>
+      <button class="nav next" (click)="nextImage()">&#10095;</button>
+      <button class="btn btn-light mt-2" (click)="close()">Close</button>
+    </div>
+  </div>

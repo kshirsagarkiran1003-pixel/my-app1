@@ -1,0 +1,129 @@
+
+/* PAGE */
+.contact-section {
+  background: #F5EFE6;
+  padding-bottom: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.contact-header {
+  background: url('/assets/img/contact.png') center/cover no-repeat;
+  position: relative;
+  padding: 70px 20px ;
+  color: #fff;
+  
+}
+
+.contact-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  
+}
+
+.contact-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-header h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.contact-header p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* COLUMNS */
+.contact-columns {
+  margin-top: 40px; /* Alkemi overlap */
+}
+
+/* CARDS */
+.contact-card {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+  border: 1px solid #9d98a1;
+  border-radius: 30px;
+}
+
+.contact-card h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-card h4::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #ff6a00;
+  display: block;
+  margin-top: 8px;
+}
+
+.company {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* FORM */
+label {
+  font-size: 13px;
+  color: #555;
+}
+
+.form-control {
+  border-radius: 2px;
+  padding: 12px;
+  border: 1px solid #080707;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #ff6a00;
+  box-shadow: none;
+}
+
+/* BUTTON */
+.send-btn {
+  background: #2020c1;
+  color: #fff;
+  padding: 12px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.send-btn:hover {
+  background: #ff6a00;
+}
+
+/* MAP */
+.map-card {
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-header h2 {
+    font-size: 30px;
+  }
+
+  .contact-columns {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,134 @@
+
+<!--final<section class="product-gallery">
+  <div class="container">
+
+    <h2 class="title">Explore by category</h2>
+    <p class="subtitle"> Premium Products</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-card"
+        *ngFor="let Product of productsData"
+        (click)="openCollection(Product.id)">
+        <div class="image-wrap">
+          <img [src]="Product.image" [alt]="Product.name">
+        </div>
+        <h4>{{ Product.name }}</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>-->
+
+
+
+
+
+
+<!--<section class="product-gallery">
+  
+<div class="gallery-header">
+    <h2 class="title">Explore by category</h2>
+    <p class="subtitle"> Premium Products</p>
+</div>
+    <div class="gallery-grid">
+
+      <div class="gallery-card " *ngFor="let Product of productsData" (click)="openCollection(Product.id)">
+        
+        <div class="image-wrap">
+          <img [src]="Product.image" [alt]="Product.name">
+        </div>
+        
+        <h4>{{ Product.name }}</h4>
+        <span>explore collection</span>
+      </div>
+    </div>
+</section>-->
+
+<!--<section class="product-gallery">
+
+  <div class="gallery-header">
+    <h2 class="title">SHOP CATEGORIES</h2>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div
+      class="gallery-card"
+      *ngFor="let product of productsData"
+      (click)="openCollection(product.id)"
+    >
+
+      <!-- Image -->
+      <!--<img [src]="product.image" [alt]="product.name">
+
+      <!-- Overlay -->
+      <!--<div class="card-overlay">
+        <div class="text">
+          <span>SHOP</span>
+          <h4>{{ product.name }}</h4>
+        </div>
+        <div class="arrow">→</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>-->
+
+<!-- GALLERY BANNER -->
+<section class="gallery-banner">
+  <div class="banner-overlay">
+    <h1>Gallery</h1>
+     <a routerLink="/Home">Home</a>
+        <span>›</span>
+        <a routerLink="/">Gallery</a>
+      
+  </div>
+</section>
+
+
+<section class="product-gallery">
+
+  <div class="gallery-header">
+    <h2 class="title">SHOP CATEGORIES</h2>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="slider-wrapper">
+
+    <!-- Left Arrow -->
+    <button class="nav-arrow left" (click)="scrollLeft()">‹</button>
+
+    <!-- Track -->
+    <div class="gallery-track" #galleryTrack>
+
+      <div
+        class="gallery-card"
+        *ngFor="let product of productsData"
+        [class.dark]="product.dark"
+        (click)="openCollection(product)"
+      >
+
+        <img [src]="product.image" [alt]="product.name">
+
+        <div class="card-overlay">
+          <div class="text">
+            
+            <h4>{{ product.name }}</h4>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="nav-arrow right" (click)="scrollRight()">›</button>
+
+  </div>
+
+</section>
