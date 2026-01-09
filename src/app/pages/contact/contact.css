@@ -1,11 +1,8 @@
 
 /* PAGE */
 .contact-section {
-  background-color:  linear-gradient(
-    180deg,
-    #f7efe6 0%,
-    #ffffff 100%
-  );
+    background: linear-gradient(180deg, #ffffff 0%, #f6efe6 100%);
+
   padding-bottom: 80px;
   font-family: 'Poppins', sans-serif;
 }
